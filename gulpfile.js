@@ -7,10 +7,8 @@ const postcss = require('gulp-postcss');
 const pump = require('pump');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
-const sassdoc = require('sassdoc');
 const sourcemaps = require('gulp-sourcemaps');
 const stylelint = require('gulp-stylelint');
-const tildeImporter = require('node-sass-tilde-importer');
 
 function css(cb) {
   pump(
@@ -26,8 +24,7 @@ function css(cb) {
         ]
       }),
       sass({
-        outputStyle: 'expanded',
-        importer: tildeImporter
+        outputStyle: 'expanded'
       }).on('error', sass.logError),
       gulp.dest('dist'),
       postcss([autoprefixer(), cssnano()]),
@@ -47,23 +44,3 @@ css.description = 'Builds Reboot CSS stylesheet';
 gulp.task(css);
 
 gulp.task('default', gulp.task('build'));
-
-function docs(cb) {
-  pump(
-    [
-      gulp.src([
-        'src/**/*.scss'
-      ]),
-      sassdoc()
-    ],
-    cb
-  );
-}
-
-docs.displayName = 'docs';
-
-docs.description = 'Generate documentation';
-
-gulp.task(docs);
-
-
