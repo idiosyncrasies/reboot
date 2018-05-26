@@ -5,6 +5,13 @@
   "scripts": {},
   "author": "Jason Silkey",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idiosyncrasies/reboot"
+  },
+  "bugs": {
+    "url": "https://github.com/idiosyncrasies/reboot/issues"
+  },
   "devDependencies": {
     "autoprefixer": "^8.5.1",
     "cssnano": "^3.10.0",
