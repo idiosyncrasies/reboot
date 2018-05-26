@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/idiosyncrasies/reboot"
   },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "bugs": {
     "url": "https://github.com/idiosyncrasies/reboot/issues"
   },
