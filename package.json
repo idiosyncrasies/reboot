@@ -1,0 +1,27 @@
+{
+  "name": "reboot",
+  "version": "0.1.0",
+  "description": "pluck(Bootstrap, 'Reboot')",
+  "scripts": {},
+  "author": "Jason Silkey",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.5.1",
+    "cssnano": "^3.10.0",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^7.0.0",
+    "node-sass-tilde-importer": "^1.0.2",
+    "postcss-html": "^0.25.0",
+    "postcss-markdown": "^0.25.0",
+    "postcss-syntax": "^0.25.0",
+    "pump": "^3.0.0",
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.1.0"
+  },
+  "dependencies": {}
+}
